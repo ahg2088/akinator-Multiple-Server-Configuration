@@ -26,10 +26,6 @@ async function CreateConfig(server){
     }).catch(err => console.log(err));
 }
 
-
-
-//Example options
-
 client.on("messageCreate", async message => {
     const PREFIX = "!";
     if(message.content.toLowerCase().startsWith(`${PREFIX}akinator`)) {
@@ -101,7 +97,7 @@ client.on("messageCreate", async message => {
         } else{
             const agrs = message.content.split(" ")[1];
             const serversDB = require(`./configs/${server}.json`);
-            if(agrs === "character" || agrs === "movie" || agrs === "tv"){
+            if(agrs === "character" || agrs === "animal" || agrs === "object"){
                 serversDB.gameType = agrs;
                 fse.outputFile(`./configs/${server}.json`, JSON.stringify(serversDB)).then(() => {
                     console.log(`Correcto`);
