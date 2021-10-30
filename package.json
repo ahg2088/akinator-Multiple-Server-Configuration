@@ -1,0 +1,26 @@
+{
+  "name": "akinator-Multiple-Server-Configuration",
+  "version": "1.0.0",
+  "description": "Akinator bot with unique configuration system for each server",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^13.2.0",
+    "fs": "0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "discord.js-akinator": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahg2088/akinator-Multiple-Server-Configuration.git"
+  },
+  "author": "ahg#2088",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahg2088/akinator-Multiple-Server-Configuration"
+  },
+  "homepage": "https://github.com/ahg2088/akinator-Multiple-Server-Configuration#readme"
+}
